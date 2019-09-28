@@ -28,7 +28,8 @@ int main()
   f2 *= 0.01;
 
   // TODO#1 add comment describing what's happening
-  std::cout << "\n**comment**" << std::endl;
+  std::cout << "\nThe varibles d2 and f2 are the total of their own outcomes times the decimal of 0.01." << std::endl;
+  std::cout << " however the values differ because of diferent amount of bytes." << std::endl;
   std::cout << sizeof(d2) << " bytes, value: " << d2 << std::endl;
   std::cout << sizeof(f2) << " bytes, value: " << f2 << std::endl;
 
@@ -36,7 +37,8 @@ int main()
   f2 *= 0.1;
 
   // TODO#2 add comment describing what's happening
-  std::cout << "\n**comment**" << std::endl;
+  std::cout << "\nThe decimal point of the values get pushed back even further." << std::endl;
+  std::cout << " Because we had to multiply the value by .1 since d2 and f2 were used in the previous calculation." << std::endl;
   std::cout << sizeof(d2) << " bytes, value: " << d2 << std::endl;
   std::cout << sizeof(f2) << " bytes, value: " << f2 << std::endl;
 
@@ -44,7 +46,8 @@ int main()
   float f3 = 3.5E38;
 
   // TODO#3 add comment describing what happened
-  std::cout << "\n**comment**" << std::endl;
+  std::cout << "\nSince the value is considered a floating point and a double," << std::endl;
+  std::cout << "the decimal point of the value is moved forward removing the value from scienticfic notation." << std::endl;
   std::cout << std::setprecision(1);
   std::cout << sizeof(d3) << " bytes, value: " << d3 << std::endl;
   std::cout << sizeof(f2) << " bytes, value: " << f3 << std::endl;
